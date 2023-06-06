@@ -9,15 +9,19 @@ import { Router } from '@angular/router';
 })
 export class RegisterPage implements OnInit {
 
-  constructor() { }
+  name: string = '';
+  email: string = '';
+  pass1: string = '';
+  pass2: string = '';
+
+  constructor(private router: Router) {}
 
   ngOnInit() {
   }
 
-  // register(form: { value: any; }) {
-  //   this.authService.register(form.value).subscribe((res: any) => {
-  //     this.router.navigateByUrl('home');
-  //   });
-  // }
-
+  register() {
+    if (this.name && this.email && this.pass1 && this.pass2) {
+      this.router.navigate(['/home', this.name]);
+    }
+  }
 }

@@ -3,19 +3,35 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Tareas</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <!-- <ion-img src="assets/icon/1.png" alt="logo"></ion-img> -->
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-label>Bienvenido/a {{ username }}</ion-label>
+
+  <ion-card color="warning">
+    <ion-card-header>
+      <ion-card-subtitle><ion-icon name="checkbox-outline"></ion-icon></ion-card-subtitle>
+      <ion-card-title [routerLink]="['/tasks']" routerDirection="root">Tareas</ion-card-title>
+    </ion-card-header>
+   
+  </ion-card>
+  <ion-card color="warning">
+    <ion-card-header>
+      <ion-card-subtitle><ion-icon name="person-circle-outline"></ion-icon></ion-card-subtitle>
+      <ion-card-title [routerLink]="['/profile']" routerDirection="root">Perfil</ion-card-title>
+    </ion-card-header>
+  </ion-card>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>© 2023 Task Sync</ion-title>
+  </ion-toolbar>
+</ion-footer>

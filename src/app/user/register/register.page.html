@@ -1,36 +1,49 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>register</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<!-- <ion-content  color="primary">
-  <form>
+<ion-content color="warning">
+  <form #form="ngForm" (ngSubmit)="register">
     <ion-grid>
-      <ion-row color="primary" justify-content-center>
+      <ion-row color="warning" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
-          <div text-center>
-            <h3>Create your account!</h3>
+          <div>
+            <h3 class="tittle">Registrate!</h3>
           </div>
           <div padding>
             <ion-item>
-              <ion-input  name="name" type="text" placeholder="Name" ngModel required></ion-input>
+              <ion-input  name="name" type="text" placeholder="Nombre" [(ngModel)]="name"></ion-input>
             </ion-item>
             <ion-item>
-              <ion-input name="email" type="email" placeholder="your@email.com" ngModel required></ion-input>
+              <ion-input name="email" type="email" placeholder="your@email.com" [(ngModel)]="email"></ion-input>
             </ion-item>
             <ion-item>
-              <ion-input name="password" type="password" placeholder="Password" ngModel required></ion-input>
+              <ion-input name="password" type="password" placeholder="Contraseña" [(ngModel)]="pass1"></ion-input>
             </ion-item>
             <ion-item>
-              <ion-input name="confirm" type="password" placeholder="Password again" ngModel required></ion-input>
+              <ion-input name="confirm" type="password" placeholder="Repetir contraseña" [(ngModel)]="pass2"></ion-input>
             </ion-item>
           </div>
           <div padding>
-            <ion-button  size="large" type="submit" [disabled]="form.invalid" expand="block">Register</ion-button>
+            <ion-button  size="large" type="submit" [disabled]="form.invalid" expand="block" (click)="register()">Registrarse</ion-button>
           </div>
+          <ion-row>
+            <div class="tittle">
+            Ya tienes una cuenta? <a routerLink='/login'>Inicia sesion!</a>
+            </div>
+          </ion-row>
         </ion-col>
       </ion-row>
     </ion-grid>
   </form>
-</ion-content> -->
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>© 2023 Task Sync</ion-title>
+  </ion-toolbar>
+</ion-footer>

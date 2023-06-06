@@ -24,3 +24,19 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+
+ion-button{
+    --background: #373737;
+}
+
+.tittle{
+    text-align: center;
+}
+a{
+    color: #000000;
+}
+ion-menu-button {
+    --color: #ffc409;
+  }

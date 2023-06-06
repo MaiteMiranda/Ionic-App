@@ -1,0 +1,13 @@
+ion-content {
+    --ion-background-color: var(--ion-color-step-50, #f8f9fa);
+    --ion-color-light: #fff;
+    --ion-color-dark: #000;
+}
+ion-item{
+    --background: transparent;
+    --color: #ffffff;
+}
+
+ion-card-subtitle{
+    font-size: 10em;
+}
