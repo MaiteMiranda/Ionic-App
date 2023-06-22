@@ -6,30 +6,30 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="warning">
+<ion-content color="light">
   <form #form="ngForm" (ngSubmit)="register">
     <ion-grid>
-      <ion-row color="warning" justify-content-center>
+      <ion-row color="light" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
           <div>
             <h3 class="tittle">Registrate!</h3>
           </div>
           <div padding>
             <ion-item>
-              <ion-input  name="name" type="text" placeholder="Nombre" [(ngModel)]="name"></ion-input>
+              <ion-input class="inputUser" name="name" type="text" placeholder="Nombre" [(ngModel)]="name"></ion-input>
             </ion-item>
             <ion-item>
-              <ion-input name="email" type="email" placeholder="your@email.com" [(ngModel)]="email"></ion-input>
+              <ion-input class="inputUser" name="email" type="email" placeholder="your@email.com" [(ngModel)]="email"></ion-input>
             </ion-item>
             <ion-item>
-              <ion-input name="password" type="password" placeholder="Contraseña" [(ngModel)]="pass1"></ion-input>
+              <ion-input class="inputUser" name="password" type="password" placeholder="Contraseña" [(ngModel)]="pass1"></ion-input>
             </ion-item>
             <ion-item>
-              <ion-input name="confirm" type="password" placeholder="Repetir contraseña" [(ngModel)]="pass2"></ion-input>
+              <ion-input class="inputUser" name="confirm" type="password" placeholder="Repetir contraseña" [(ngModel)]="pass2"></ion-input>
             </ion-item>
           </div>
           <div padding>
-            <ion-button  size="large" type="submit" [disabled]="form.invalid" expand="block" (click)="register()">Registrarse</ion-button>
+            <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block" (click)="register()">Registrarse</ion-button>
           </div>
           <ion-row>
             <div class="tittle">

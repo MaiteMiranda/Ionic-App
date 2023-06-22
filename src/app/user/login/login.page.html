@@ -6,25 +6,26 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="warning">
+<ion-content>
   <form #form="ngForm" (ngSubmit)="login">
     <ion-grid>
-      <ion-row color="warning" justify-content-center>
+      <ion-row justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
           <div class="tittle">
             <h3>Iniciar sesion</h3>
           </div>
           <div>
             <ion-item>
-              <ion-input name="email" type="email" placeholder="your@email.com" [(ngModel)]="username"></ion-input>
+              <ion-input label="your@email.com" label-placement="floating" fill="outline" name="email" type="email" [(ngModel)]="username"></ion-input>
+              <!-- <ion-input class="inputUser no-line" name="email" type="email" placeholder="your@email.com" [(ngModel)]="username"></ion-input> -->
             </ion-item>
             <ion-item>
-              <ion-input name="password" type="password" placeholder="Contraseña" [(ngModel)]="password"></ion-input>
+              <ion-input class="inputUser" name="password" type="password" placeholder="Contraseña" [(ngModel)]="password"></ion-input>
             </ion-item>
           </div>
-          <div>
-            <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block" (click)="login()">Login</ion-button>
-          </div>
+        
+              <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block" (click)="login()">Login</ion-button>
+        
           <ion-row>
             <div class="tittle">
               No tienes una cuenta? <a routerLink='/register'>Registrate!</a>

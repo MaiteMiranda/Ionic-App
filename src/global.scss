@@ -27,16 +27,51 @@
 
 
 
-ion-button{
-    --background: #373737;
-}
-
+// ion-button{
+//     --background: #373737;
+// }
+$Morado : #9457f7;
 .tittle{
     text-align: center;
 }
 a{
-    color: #000000;
+    color: $Morado;
 }
 ion-menu-button {
-    --color: #ffc409;
+    color: $Morado;
+}
+button{
+    background-color: $Morado;
+}
+ion-item{
+    --background: transparent;
+    --color: #000000;
+}
+svg.ionicon{
+    color: $Morado;
+}
+
+ion-content {
+    --background: var(--ion-color-step-50);
+}
+ion-button {
+    background-color: $Morado;
+    color: white;
+    width: 50%;
+    margin: 1rem;
+    align-items: center;
   }
+  
+  ion-toolbar {
+    --border-width: 0;
+    --inner-border-width: 0;
+  }
+  ion-item {
+    --border-color: #3a07617c;
+    --inner-border-color: #3a07617c;
+  }
+    
+  
+label{
+    color: white;
+}
