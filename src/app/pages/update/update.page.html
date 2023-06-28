@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>Editar tarea</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Editar tarea</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- <h2 class="ion-text-center">Tarea a Agregar</h2> -->
+  <ion-item>
+    <ion-label position="floating">Nombre tarea</ion-label>
+    <ion-input type="text" [(ngModel)]="nombreTarea"></ion-input>
+  </ion-item>
+ 
+  <ion-item>
+    <ion-label position="floating"> </ion-label>
+    <ion-input type="datetime-local" [(ngModel)]="fechaHora"></ion-input>
+  </ion-item>
+
+  <ion-button shape="block" (click)="editar()">Guardar tarea</ion-button>
+</ion-content>

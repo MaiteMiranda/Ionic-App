@@ -27,9 +27,9 @@
 
 
 
-// ion-button{
-//     --background: #373737;
-// }
+ion-button{
+    --background: #373737;
+}
 $Morado : #9457f7;
 .tittle{
     text-align: center;
@@ -43,35 +43,43 @@ ion-menu-button {
 button{
     background-color: $Morado;
 }
-ion-item{
-    --background: transparent;
-    --color: #000000;
-}
-svg.ionicon{
-    color: $Morado;
-}
+// ion-item{
+//     --background: transparent;
+//     --color: #000000;
+// }
+// svg.ionicon{
+//     color: $Morado;
+// }
 
-ion-content {
-    --background: var(--ion-color-step-50);
-}
-ion-button {
-    background-color: $Morado;
-    color: white;
-    width: 50%;
-    margin: 1rem;
-    align-items: center;
-  }
+// ion-content {
+//     --background: var(--ion-color-step-50);
+// }
+// ion-button {
+//     background-color: $Morado;
+//     color: white;
+//     width: 50%;
+//     margin: 1rem;
+//     align-items: center;
+//   }
   
-  ion-toolbar {
-    --border-width: 0;
-    --inner-border-width: 0;
-  }
-  ion-item {
-    --border-color: #3a07617c;
-    --inner-border-color: #3a07617c;
-  }
+//   ion-toolbar {
+//     --border-width: 0;
+//     --inner-border-width: 0;
+//   }
+//   ion-item {
+//     --border-color: #3a07617c;
+//     --inner-border-color: #3a07617c;
+//   }
     
   
-label{
+// label{
+//     color: white;
+// }
+
+h1, h2, h3, p, a {
+    color: white;
+}
+
+input.native-input.sc-ion-input-ios{
     color: white;
 }

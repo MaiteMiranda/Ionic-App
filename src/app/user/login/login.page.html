@@ -17,15 +17,13 @@
           <div>
             <ion-item>
               <ion-input label="your@email.com" label-placement="floating" fill="outline" name="email" type="email" [(ngModel)]="username"></ion-input>
-              <!-- <ion-input class="inputUser no-line" name="email" type="email" placeholder="your@email.com" [(ngModel)]="username"></ion-input> -->
             </ion-item>
+
             <ion-item>
-              <ion-input class="inputUser" name="password" type="password" placeholder="Contraseña" [(ngModel)]="password"></ion-input>
+              <ion-input label="Contraseña" label-placement="floating" fill="outline" name="password" type="password" [(ngModel)]="password"></ion-input>
             </ion-item>
           </div>
-        
-              <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block" (click)="login()">Login</ion-button>
-        
+            <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block" (click)="login()">Login</ion-button>
           <ion-row>
             <div class="tittle">
               No tienes una cuenta? <a routerLink='/register'>Registrate!</a>
